@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberSecure - Ethical Hacking Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CyberSecure</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tools">Tools</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#booking">Booking</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to CyberSecure</h2>
+      <p>Learn, practice, and master ethical hacking.</p>
+      <a href="#login" class="btn">Login to Start</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We empower students and professionals in cybersecurity with real-world tools and knowledge. Join our ethical hacking community and sharpen your skills with hands-on learning.</p>
+    <a href="https://discord.gg/F4fSEMBe67" target="_blank" class="discord-link">Join Our Discord</a>
+  </section>
+
+  <section id="tools">
+    <h2>Tools & Services</h2>
+    <ul>
+      <li>Vulnerability Scanners</li>
+      <li>Network Sniffers</li>
+      <li>Penetration Testing Lab</li>
+      <li>Custom Security Scripts</li>
+      <li>1-on-1 Ethical Hacking Sessions</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Users Say</h2>
+    <blockquote>"Amazing platform! Helped me get a job as a SOC analyst." - Rifat H.</blockquote>
+    <blockquote>"I love the practical labs and the Discord community!" - Sarah K.</blockquote>
+  </section>
+
+  <section id="login" class="login">
+    <h2>Login</h2>
+    <form onsubmit="return login(event)">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p id="login-message"></p>
+    </form>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Session</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="What do you want to learn?" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CyberSecure | Ethical Hacking for Everyone</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
